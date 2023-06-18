@@ -50,10 +50,10 @@ local winbar_file = function()
 		end
 
 		if not opts.show_file_icon then
-			file_icon = ""
+			file_icon = "%#" .. hl_winbar_file_icon .. "#" .. "" .. "%*"
+		else
+			file_icon = "%#" .. hl_winbar_file_icon .. "#" .. file_icon .. " %*"
 		end
-
-		file_icon = "%#" .. hl_winbar_file_icon .. "#" .. file_icon .. " %*"
 
 		value = " "
 		if opts.show_file_path then
