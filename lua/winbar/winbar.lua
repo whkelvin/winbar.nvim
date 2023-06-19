@@ -106,7 +106,7 @@ M.init = function()
 	if f.isempty(opts.colors.path) then
 		hl_winbar_path = "MsgArea"
 	else
-		vim.api.nvim_set_hl(0, hl_winbar_path, { fg = opts.colors.path })
+		vim.api.nvim_set_hl(0, hl_winbar_path, { fg = opts.colors.path, bg = "#FFFFFF" })
 	end
 
 	if f.isempty(opts.colors.file_name) then
